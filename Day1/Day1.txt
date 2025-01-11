@@ -1,0 +1,188 @@
+1. TOC --> Python L1 + Delivering session
+	wilearn.wipro.com
+	Learning Path --> LP-304
+	Assessment    --> QA55
+	
+2. Attendance (70%) + Interactions + Assignments or Hands_on + Day Wise practice  + Assessment (70%)
+3. Notes + Recordings
+4. Capstone Project 
+5. Teams Group -->  Files --> Create Folder --> Name_EmpNum
+6. Join this meeting using wipro mail ID
+
+06-Jan-2025  to 20- Jan-2025  -  10:30AM to 12:30 PM  (IST)
+
+-----------------------------------------------------------------
+
+Python L1
+-------------------------------------
+1. What is Python
+	Python is Opensource high level scripting language supports core OOPs concept.
+2. History of Python
+	Who   --> Guido Van Rossum
+	Where --> NetherLand (CWI)
+	When  --> started in late 1980s (1989) but released in 1991
+3. Features of Python
+	Open Source
+	OOPs
+	Beginners language
+	Expandable 
+	Platform independent
+	Portable
+	Versatile
+	Secured
+
+4. Where are we using Python
+	Web Development
+	Data Analysis
+	AI & ML
+	Game development
+	Automation Testing
+	Window application development
+	Cloud
+	Robotics
+	Networking
+
+Installation
+--------------------------
+
+IDE  -->  
+
+	Spyder
+	Jupitor
+	PyCharm
+	IDLE
+	Eclipse
+
+https://www.onlinegdb.com/online_python_compiler
+
+
+--------------------------------------
+
+
+Key Tokens or fundamentals
+-------------------------------------
+
+Keywords
+comments
+datatypes
+variables
+identifiers
+operators
+condition statements
+indentation
+looping statements
+
+
+
+Keywords
+	Reserved words which has its own meaning 
+	for, if, while, else ……  33 keywords in python
+
+	help()
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not
+
+
+Comments
+	ignore the statements to be executed
+
+	single line comment    --> #
+	multi line Comments    --> '''        '''
+
+
+Data type
+	the type of data which is stored
+	
+	primitive datatype
+		it stores only one item or values in a storage
+		each and everything is considered as an object
+
+		integers		-->  <class 'int'>
+		Boolean			--> bool
+		Strings			--> str
+		Decimals		--> float
+		Complex numbers		--> complex
+
+
+	Non primitive datatype
+		it stores multiple value or item in a storage
+
+		Data structures
+			List
+			Set
+			Dictionary
+			Tuple
+
+Variable
+	
+	The value which changes in the run time
+	python is dynamically typed   -->  it will read the values based on the context
+
+Java			Python
+
+int a =10;		a=10;	     --> Integer	--> int()
+			st="Sunil"   -->  String
+			fl= 3.142    --> float
+			dec= True    --> Boolean
+			com= 5+7j     --> complex
+
+			val="234"   --> String
+	
+			type()
+
+
+Identifier   --> the name of a variable 
+
+		val=3.142
+
+output statements
+	Display the values or output on the console
+	print()
+
+;  -->  no need
+case sensitive  --> functions, variables 
+
+	C style print
+	Formatted print
+	Python print
+
+python will save the file with .py extension
+
+
+sal=10000  # integer 
+exp=6.5 # float
+comp="wipro" # String
+
+print(type(sal))
+print(type(exp))
+print(type(comp))
+
+print("My name is sunil")
+
+
+#C style
+
+print("sunil is working in %s from past %.2f years with salary %d"%(comp,exp,sal))
+
+# Formatted style
+print(f"sunil is working in {comp} from past {exp} years with salary {sal}")
+print("sunil is working in {0} from past {1} years with salary {2}".format(comp,exp,sal))
+
+#Unformatted or Python style
+print("sunil is working in",comp," from past ",exp," years with salary ",sal)
+#print("sunil is with sal"+sal)
+#print("sunil is with experience"+exp)
+#print("sunil is with company "+comp)
+	
+
+#print("sunil is with sal"+sal)----> this will give error that string can't concatenate with int or float

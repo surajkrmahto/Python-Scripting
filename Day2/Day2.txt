@@ -1,0 +1,315 @@
+
+input statements
+-----------------------------------------
+	read the values in runtime
+	input()
+	sal=input("Enter the salary \n")    --> read the value as String by default
+	10000  --> String
+	
+
+Type casting  --> convert the string into its type
+
+	int()
+	float()
+	bool()
+	complex()
+	str()
+	list()
+
+	sal=input("Enter the salary \n")     -->  it expect any value
+	salary=int(sal)   		     --> type casted to integer	
+	type(salary)   			     --> <class 'int'>
+	
+	sal=int(input("Enter the salary \n"))  --> it accept only integer value to be entered 
+		
+eval()
+--------
+	evaluate the expressions
+	it cast the values into its type
+
+	sal=eval(input("Enter the salary \n"))     -->  it accept any value
+						   -->  it cast into its type
+	
+		
+
+		10000   -->  integer
+		"sunil" -->   string
+		3.142   -->  float
+
+'''
+a=input("Enter the number \n") 
+print(a,"types is ",type(a))
+
+
+sal=int(input("Enter the salary \n"))
+#s=int(sal) 
+print("Salary type is ",type(sal))
+
+
+# Type casting
+#intsalr=int(input("Enter the salary \n"))
+
+
+sal = int(input("Enter the salary \n"))
+print("Before typecast ",type(sal))
+#intsalr=int(sal)
+#print("After Salary type is ",type(intsalr))
+
+
+exp=input("Enter the experience \n")
+floatExp=float(exp)
+print("Experience is ",exp," type is ",type(floatExp))
+#Type cast while entering input
+#exp=float(input("enter the experience \n"))
+#print("experience is ",exp,"and type is",type(exp))
+'''
+#eval()
+inp=eval(input("Enter the value \n"))
+print("The value is",inp,"its type is ",type(inp))
+
+
+
+-----------------------------
+Operators
+--------------------
+
+Arithmetic Operators
+		+, -, *, / , %, ** (power) , // (floor division)
+
+
+Comparison or relational Operators 
+		<,>,>=,<=, ==, !=
+		compares the values and return Boolean statement
+		true or false
+		(10>2)   --> true
+		10>=12   --> false
+		10==10   --> true
+		10!=2	 --> true
+
+Assignment Operators
+		=, +=, *=, -=, /=
+
+		a=10 --> 
+		#a+=3 --> a=a+3  --> a=10+3  --> 13
+		a*=2  --> a= a*2 --> a=10*2  --> 20
+
+
+
+Logical Operators 
+
+
+and	
+or
+not
+
+true  --> 1
+false --> 0
+
+
+A       B 	and (*) 	or (+)
+0       0	0		0
+0	1	0		1
+1	0	0		1
+1	1	1		1
+
+A	not
+1	0
+0	1
+
+and --> always returns true when both inputs are true
+or  --> always returns false only when both inputs are false
+a=11
+b=2
+
+
+# Arithmetic Operators
+print("addition ",a+b)
+print("Substraction ",a-b)
+print("multi",a*b)
+print("division ",a/b)
+print("power ",a**b) # 10 power 2
+print(a/b,"and ",a//b)
+print("Modulus ",a%2) #--> Returns Reminder
+
+
+
+#Comparision Operator
+print(a>b) 
+print(a<b)
+print(a==b)
+print(a!=b)
+
+#Assignment operators
+a+=b  # --> a=a+b --> a=10+2
+print(a) #12 
+
+b*=2  #  b=b*2  --> b=4
+print(b) # 4 
+not --> it negates the input
+
+
+
+x=20
+y=10
+     #   true      false   -->  false
+print( (x>y) and (y>x) )
+
+print( (x>y) and (y!=x))  #  --> true
+
+print( (x>y) or (y>x) )   #  --> true
+
+print(not(x!=y))
+
+
+Indentation
+----------------------------
+	used to define block of code
+	starts with  :
+	next line with white spaces
+		standards -> 4 white space
+		you can start with single white space 
+java
+
+if(condn)
+{
+	statements
+}
+else
+{
+	statements
+}
+
+Python
+
+if(condn):
+    print("statement")
+else:
+    print("statement")
+
+
+
+
+condition statements
+-----------------------------------
+
+if - else
+nested if
+ladder if
+
+if - else
+
+if(condn):
+    print("statement")
+else:
+    print("statement")
+
+
+Nested if
+
+if(condn1):
+    if(condn2):
+        statement
+    else:
+	statement
+else:
+    statement
+
+ladder if
+
+Python doesnot support switch instead we use ladder if
+
+
+if(condn1):
+    statement
+elif(condn2):
+    statement
+elif(condn3):
+    statement
+else:
+    statement
+
+
+a=input("Enter the value for A \n")#10
+if(int(a)==10):
+    print(a," is equals to 10") #Truth Block
+else:
+    print(a," is not equals to 10") # False Block
+print("We are out of if-else block")
+
+
+
+
+#Nested if --> condition inside the other condition
+#greater in 3 numbers
+a=int(input("Enter the value for A \n")) #100
+b=int(input("Enter the value for B \n")) #2015
+c=int(input("Enter the Value for C \n")) #215
+
+if a>b:
+    if a>c:
+        print(a," is greater")
+    else:
+        print(c," is greater")
+else:
+    if b>c:
+        print(b," is greater")
+    else:
+        print(c," is greater")
+
+
+
+# Ladder if
+# Vowels 
+# \n, \t \r
+ch=input("Enter an alphabet \n")#P
+print(ch,type(ch))
+if(ch == 'a' or ch == 'A'): # or --> one of the statement is True
+    print(ch," is a Vowel")
+elif(ch == 'e' or ch == 'E' ):
+    print(ch," is a Vowel")
+elif(ch == 'i' or ch =='I'):
+    print(ch," is a Vowel")
+elif(ch == 'o' or ch =='O'):
+    print(ch," is a Vowel")
+elif(ch == 'u' or ch == 'U'):
+    print(ch," is a Vowel")
+else:
+    print(ch," is not a vowel")
+
+
+
+#using or operator
+
+ch=input("Enter an Alphabet \n")
+if ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u':
+    print(ch," is Vowel")
+else:
+    print(ch," is not Vowel")
+
+
+
+#And Operator
+#greater in 3 numbers
+a=int(input("Enter the value for A \n"))
+b=int(input("Enter the value for B \n"))
+c=int(input("Enter the Value for C \n"))
+
+if a>b and a>c:
+    print(a," is greater") 
+elif b>c:
+    print(b," is greater") 
+else:
+    print(c," is greater") 
+ 
+
+
+
+y=10  -->  y is true
+not y   -->  y turns to false	
+
+#x=int(input("Enter the value \n"))
+y=input("Enter the value \n")  # wip
+if not y: 
+    print("Block1")
+else:
+    print("Block2")
